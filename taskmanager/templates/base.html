@@ -25,7 +25,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="">New Task</a></li>
-                <li><a href="">Categories</a></li>
+                <li><a href="{{ url_for('categories') }}">Categories</a></li>
             </ul>
             </div>
         </nav>
@@ -34,7 +34,7 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="">New Task</a></li>
-            <li><a href="">Categories</a></li>
+            <li><a href="{{ url_for('categories') }}">Categories</a></li>
         </ul>
     </header>
 
@@ -46,12 +46,13 @@
     <footer class="page-footer blue darken-3">
         <div class="footer-copyright">
             <div class="container">
-                For educational purposes only
-                <a class="white-text right" href="https://codeinstitute.net" target="_blank">&copy; Code Institute</a>
+                Task Manager mini project
+                <a class="white-text right" href="https://github.com/carl2087?tab=repositories" target="_blank">&copy; Carl Ellis</a>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
